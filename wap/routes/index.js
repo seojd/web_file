@@ -27,11 +27,11 @@ newMember.sex = req.body.sex;
 
 newMember.save(function(err){
 if(err){
-console.error(err);
-res.json({result: 0});
-return;
-}
-res.redirect('/');
+    console.error(err);
+    res.json({result: 0});
+    return;
+    }
+    res.redirect('/');
 });
 });
 
