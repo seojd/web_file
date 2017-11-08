@@ -1,11 +1,31 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1">
+    <title>FoodTrip</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style>
+        body{ padding-top:80px; }
+
+    </style>
   </head>
   <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
+    <div class="container">
+		    <div class="jumbotron text-center">
+                <img src="/image/logo.jpg">
+		        <h1> Food Trip</h1>
+				<br>
+				<p>로그인하세요.<p>
+				<p>계정이 없으시면 회원가입하세요.</p>
+				<br>
+		        <a href="/login" class="btn btn-info"><span class="glyphicon glyphicon-check"></span>로그인</a>
+		        <a href="/signup" class="btn btn-info"><span class="glyphicon glyphicon-check"></span>회원가입</a>
+		    </div>
+		
+		</div>
+
   </body>
 </html>
