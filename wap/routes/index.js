@@ -14,7 +14,7 @@ router.get('/login', function(req, res, next) {
 
 /* Sign up */
 router.get('/signup', function(req, res, next) {
-  res.render('signup', { title: '회원가입' });
+  res.render('signup', { title: '회원가입', items:[] });
 });
 
 // CREATE MEMBER
@@ -23,7 +23,6 @@ var newMember = new Member();
 newMember.id = req.body.id;
 newMember.password = req.body.password;
 newMember.password2 = req.body.password2;
-newMember.sex = req.body.sex;
 
 newMember.save(function(err){
 if(err){
