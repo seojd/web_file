@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1">
-    <title>맛집등록</title>
+    <title>맛집리뷰</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
@@ -50,77 +50,41 @@
       </div>
     </nav>
       
- <div class="container">			
+       <div class="container">			
 <div class="col-sm-6 col-sm-offset-3">
-<center><h1>맛집등록</h1></center>
+<center><h1>맛집리뷰등록</h1></center>
     
 <form action="/insert" method="post" >
     
 <div class="form-group">
-<label for="mzname">가게이름</label>
-<input type="text" class="form-control" id="mzname" name="mzname" placeholder="가게 이름을 입력해주세요" >
+<input type="text" class="form-control" id="mzname" name="mzname" placeholder="제목" >
 </div>
-
-
-<div class="form-group">
-<label for="mztime">운영시간</label>
-<input type="text" class="form-control" id="mztime" name="mztime" placeholder="운영 시간을 입력해주세요">
-</div>
-
-
-<div class="form-group">
-<label for="mzmenu">메뉴</label>
-    <textarea class="form-control" rows="3" id="mzmenu" name="mzmenu" placeholder="메뉴를 입력해주세요"></textarea></div>
-<!--<p class="help-block">비밀번호 확인을 위해 다시한번 입력 해 주세요</p>-->
-
-<div class="form-group">
-<label for="mzaddr">주소</label>
-    <input type="text" class="form-control" id="mzaddr" name="mzaddr" placeholder="주소를 입력해주세요"></div>
-    
-<div class="form-group">
-<label for="mztel">전화번호</label>
-<select name="telarea">
-<option value="1"> 02 </option>
-<option value="2"> 051 </option>
-<option value="3"> 053 </option>
-<option value="4"> 032 </option>
-<option value="5"> 062 </option>
-<option value="6"> 042 </option>
-<option value="7"> 052 </option>
-<option value="8"> 044 </option>
-<option value="9"> 031 </option>
-<option value="10"> 033 </option>
-<option value="11"> 043 </option>
-<option value="12"> 041 </option>
-<option value="11"> 063 </option>
-<option value="12"> 061 </option>
-<option value="11"> 054 </option>
-<option value="12"> 055 </option>
-<option value="11"> 043 </option>
-<option value="12"> 064 </option>    
-</select>
-<input type="text" class="form-control" id="mztel" name="mztel" placeholder="나머지 번호를 입력하세요">
-</div>
-    <div>
+                            <div>
                                 <label for="InputSubject1">파일첨부</label>
                                 <input id="fileInput" filestyle="" type="file" data-class-button="btn btn-default" data-class-input="form-control" data-button-text="" data-icon-name="fa fa-upload" class="form-control" tabindex="-1" style="position: absolute; clip: rect(0px 0px 0px 0px);">
-        <div class="bootstrap-filestyle input-group">
+                                <div class="bootstrap-filestyle input-group">
                                     <input type="text" id="userfile" class="form-control" name="userfile" disabled="">
                                     <span class="group-span-filestyle input-group-btn" tabindex="0">
-                                        <label for="fileInput" class="btn btn-default ">파일 업로드
-                                            <span class="glyphicon fa fa-upload"></span></label>
-                                          </span>
+                                        <label for="fileInput" class="btn btn-default ">File Upload
+                                            <span class="glyphicon fa fa-upload"></span>
+                                        </label>
+                                    </span>
                                 </div>
                             </div><br>
-    <div align="center">
-<button type="submit" name="submit" class="btn btn-warning">
-<span class="glyphicon glyphicon-check"></span>맛집등록</button>
-</div> 
-    </form>
-    <p align="center"> FoodTrip &copy;</p>
-   
+                            <div>
+                                <textarea class="form-control" rows="5" name="contents" placeholder="내용을 쓰세요"></textarea>
+                            </div><br>
+                            <div>
+                                <button type="submit" class="form-control btn btn-warning">등록</button>
+                            </div>
+                        </form>
+                    </div>
+      </div>
 
-    </div>
-    </div>
+      
+        <p align="center"> FoodTrip &copy;</p>
+      
+
+    
 </body>
 </html>
